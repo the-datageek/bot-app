@@ -30,7 +30,7 @@ function UserBots({bot, userBots, setUserBots}){
                 <div className="content">
                  <div className="header">
                     {bot.name}
-                    <i className={botTypeClasses[bot.bot_class]} />
+                    <i className={botType[bot.bot_class]} />
                 </div>
                 <div className="meta text-wrap">
                     <small>{bot.catchphrase}</small>
@@ -64,5 +64,13 @@ function UserBots({bot, userBots, setUserBots}){
         </div>
     )
 }
+const botType = {
+    Assault: "icon military",
+    Defender: "icon shield",
+    Support: "icon plus circle",
+    Medic: "icon ambulance",
+    Witch: "icon magic",
+    Captain: "icon star",
+  };
 
 export default UserBots
