@@ -9,14 +9,14 @@ function UserBots({bot, userBots, setUserBots}){
         console.log(userBots)
     }
 
-    function dischargedbot(id=`${bot.id}`){
+    function dischargebot(id=`${bot.id}`){
         console.log(id);
         axios
         .delete(`http://localhost:3002/bots/${id}`)
         .then(alert("bot deleted"))
     }
 
-    
+
 
 
     return(
@@ -64,3 +64,5 @@ function UserBots({bot, userBots, setUserBots}){
         </div>
     )
 }
+
+export default UserBots
