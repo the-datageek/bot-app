@@ -1,4 +1,24 @@
+import React from "react"
+import axios from "axios"
+
 function UserBots({bot, userBots, setUserBots}){
+    function removeUserBot(arrayOfUserBots){
+        let id = bot.id;
+        const newBotArray = userBots.filter((bot) => bot.id !== id);
+        setUserBots(newBotArray)
+        console.log(userBots)
+    }
+
+    function dischargedbot(id=`${bot.id}`){
+        console.log(id);
+        axios
+        .delete(`http://localhost:3002/bots/${id}`)
+        .then(alert("bot deleted"))
+    }
+
+    
+
+
     return(
         <div className="ui column">
             <div
