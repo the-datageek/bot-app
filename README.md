@@ -16,7 +16,7 @@ developer, to develop a galactic web app that will allow them to browse through
 a list of robots, view a robot's details, and, enlist a bot into their army.
 
 ## Setup
-Aftr ubundling the project:
+After ubundling the project:
 * Run <code>npm install</code> in your terminal
 * In a new terminal, run <code>npm start</code>. This will run your React app on port 3000.
 
